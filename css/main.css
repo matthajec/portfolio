@@ -1,0 +1,55 @@
+
+* {
+  font-family: Roboto, Arial, Helvetica, sans-serif !important;
+}
+
+section.main-section {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1529429612779-c8e40ef2f36d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: bottom;
+}
+
+
+
+
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+
+
+
+.skills-list {
+  list-style: none;
+}
+
+.skills-list img {
+  margin-right: 28px;
+  height: 50px;
+  width: 50px;
+}
+
+.skills-item  {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.skills-tooltip {
+  opacity: 0;
+  transition: opacity .1s ease;
+  position: absolute;
+  transform: translateX(-15px);
+  bottom: -33px;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 100px;
+  background-color: #5a6064!important;
+  border: 2px solid #000;
+  color: #fff;
+  z-index: 10;
+}
+
+.skills-item img:hover ~ .skills-tooltip {
+  opacity: 1;
+}
