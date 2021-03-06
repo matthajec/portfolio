@@ -10,7 +10,8 @@
   <link href="./css/main.css" rel="stylesheet"/> 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <script src="https://kit.fontawesome.com/645450b485.js" crossorigin="anonymous"></script>
   <script src="./bootstrap/js/bootstrap.bundle.min.js" defer></script>
 </head>
 <body>
@@ -24,8 +25,8 @@
           <a class="lead nav-link pe-3" href="#home">Home</a>
           <a class="lead nav-link pe-3" href="#about">About Me</a>
           <a class="lead nav-link pe-3" href="#projects">Projects</a>
-          <a class="lead nav-link pe-3" href="#contact">Contact</a>
           <a class="lead nav-link pe-3" href="#links">Links</a>
+          <a class="lead nav-link pe-3" href="#contact">Contact</a>
         </div>
       </div>
     </div>
@@ -36,13 +37,13 @@
     <p class="h3 text-light">Matthew Hajec</p>
   </section>
 
-  <section id="about" class="vh-100 container">
-    <div class="row pt-5">
-      <h2 class="text-center text-primary mt-5 h1"><strong><span class="text-dark">About</span> Me</strong></h2>
+  <section id="about" class="container p-5">
+    <div class="row mt-5">
+      <h2 class="text-center text-primary h1"><strong><span class="text-dark">About</span> Me</strong></h2>
     </div>
     <div class="row">
       <div class="col-4 d-flex align-items-center justify-content-center flex-column">
-          <img class="rounded-circle w-75" src="images/placeholder.jpg" alt="picture of me"/>
+          <img class="rounded-circle w-75" src="images/me.png" alt="picture of me"/>
           <p class="mt-2 lead"><strong>Matthew</strong></p>
       </div>
       <div class="lead col-8 d-flex justify-content-center flex-column">
@@ -53,46 +54,43 @@
           <p>
             Personally, I am highly motivated, hard-working, results-oriented, and constantly looking for ways to improve my skills and efficiency as a developer.
           </p>
-          <p>
-            I work well with other people but I also do good in an individual enviroment.
-          </p>
           <div>
-            <p>Here are some of my current technical skills:</p>
+            <p>Here are some of my current technical skills (hover for tooltips):</p>
             <ul class="skills-list d-flex p-0">
               <li class="skills-item">
-                <img src="images/html.png">
+                <img src="images/skills/html.png">
                 <span class="skills-tooltip">HTML5</span>
               </li>
               <li class="skills-item">
-                <img src="images/css.png">
+                <img src="images/skills/css.png">
                 <span class="skills-tooltip">CSS3</span>
               </li>
               <li class="skills-item">
-                <img src="images/js.png">
+                <img src="images/skills/js.png">
                 <span class="skills-tooltip">JavaScript</span>
               </li>
               <li class="skills-item">
-                <img src="images/typescript.png">
+                <img src="images/skills/typescript.png">
                 <span class="skills-tooltip">Typescript</span>
               </li>
-              <li class="skills-item">
-                <img src="images/react.png">
+              <li class="skills-item" id="projects" class="container p-5">
+                <img src="images/skills/react.png">
                 <span class="skills-tooltip">React</span>
               </li>
               <li class="skills-item">
-                <img src="images/sass.png">
+                <img src="images/skills/sass.png">
                 <span class="skills-tooltip">SASS/SCSS</span>
               </li>
               <li class="skills-item">
-                <img src="images/bootstrap.png">
+                <img src="images/skills/bootstrap.png">
                 <span class="skills-tooltip">Bootstrap</span>
               </li>
               <li class="skills-item">
-                <img src="images/git.png">
+                <img src="images/skills/git.png">
                 <span class="skills-tooltip">Git</span>
               </li>
               <li class="skills-item">
-                <img src="images/node.png">
+                <img src="images/skills/node.png">
                 <span class="skills-tooltip">NodeJs</span>
               </li>
             </ul>
@@ -100,9 +98,116 @@
         </strong>
       </div>
     </div>
-
   </section>
 
+  <section id="projects" class="container p-5">
+      <div class="row mt-3 mb-3">
+        <h2 class="text-primary h1"><strong><span class="text-dark">My </span>Projects</strong></h2>
+      </div>
 
+      <div class="row d-flex">
+        <div class="col-4 mb-4 flex-grow-1">
+          <div class="card">
+            <img class="card-img-top border-bottom" src="images/projects/netflix-clone.png" alt="Card image cap">
+            
+            <div class="card-body">
+              <h5 class="card-title">Netflix Clone</h5>
+              <p class="card-text">Netflix clone using React on the front end and Firebase for the backend</p>
+            </div>
+            <div class="card-body">
+              <a href="#" class="btn btn-primary">Visit Site</a>
+              <a href="#" class="btn btn-primary">More...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 mb-4 flex-grow-1">
+          <div class="card h-100">
+            <img class="card-img-top border-bottom" src="images/projects/where-in-the-world.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Where in the world?</h5>
+              <p class="card-text">A REST API-connected React website for information about the worlds countries</p>
+              <a href="#" class="btn btn-primary">Visit Site</a>
+              <a href="#" class="btn btn-primary">More...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 mb-4">
+          <div class="card">
+            <img class="card-img-top border-bottom" src="images/projects/simple-sorting-algorithms.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Simple Sorting Algorithms</h5>
+              <p class="card-text">A Bootstrap and jQuery powered sorting algorithm visualizer</p>
+              <a href="#" class="btn btn-primary">Visit Site</a>
+              <a href="#" class="btn btn-primary">More...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 mb-4">
+          <div class="card">
+            <img class="card-img-top border-bottom" src="images/projects/todo-list.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Todo App</h5>
+              <p class="card-text">A todo app with basic sorting features, persistance in local storage, and drag-and-drop functionality</p>
+              <a href="#" class="btn btn-primary">Visit Site</a>
+              <a href="#" class="btn btn-primary">More...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 mb-4">
+          <div class="card">
+            <img class="card-img-top border-bottom" src="images/projects/clock.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Minimalist Clock</h5>
+              <p class="card-text">A minimalist homepage with a clock, inspirational quotes from an API, and information like day of the year, day of the week, etc</p>
+              <a href="#" class="btn btn-primary">Visit Site</a>
+              <a href="#" class="btn btn-primary">More...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 mb-4">
+          <div class="card">
+            <img class="card-img-top border-bottom" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">React Movie Search</h5>
+              <p class="card-text">An app that uses <a href="https://www.themoviedb.org/">TMDB</a>'s search API to find movies</p>
+              <a href="#" class="btn btn-primary">Visit Site</a>
+              <a href="#" class="btn btn-primary">More...</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+  <section id="links" class="container p-5">
+    <div class="row mt-5">
+      <h2 class="text-center text-primary h1"><strong>Links</strong></h2>
+    </div>
+    <div class="row mt-5">
+      <div class="col text-center">
+        <a class="links-item" href="">
+          <i class="links-icon bi bi-github"></i>
+          <p class="links-label">GitHub</p>
+        </a>
+      </div>
+      <div class="col text-center">
+        <a class="links-item" href="">
+          <i class="links-icon bi bi-linkedin"></i>
+          <p class="links-label">GitHub</p>
+        </a>
+      </div>
+      <div class="col text-center">
+        <a class="links-item" href="">
+          <i class="links-icon bi bi-file-earmark"></i>
+          <p>Portfolio</p>
+        </a>
+      </div>
+    </div>
+  </section>
 </body>
 </html>

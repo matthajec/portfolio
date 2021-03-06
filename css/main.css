@@ -9,7 +9,9 @@ section.main-section {
   background-position: bottom;
 }
 
-
+.navbar {
+  z-index: 100;
+}
 
 
 .nav-link:hover {
@@ -52,4 +54,28 @@ section.main-section {
 
 .skills-item img:hover ~ .skills-tooltip {
   opacity: 1;
+}
+
+
+
+
+
+.links-icon {
+  font-size: 4rem;
+}
+
+.links-icon,
+.links-item {
+  color: #000;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.links-item:hover {
+  color: #0d6efd !important;
+  text-decoration: underline;
+}
+
+.links-item:hover > .links-icon {
+  color: #0d6efd !important;
 }
