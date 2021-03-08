@@ -66,6 +66,7 @@ section.main-section {
   color: #000;
   text-decoration: none;
   transition: color .2s ease;
+  transition: font-size .2s ease;
 }
 
 .links-item:hover {
