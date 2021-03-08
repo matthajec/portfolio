@@ -57,9 +57,6 @@ section.main-section {
 }
 
 
-
-
-
 .links-icon {
   font-size: 4rem;
 }
@@ -74,8 +71,10 @@ section.main-section {
 .links-item:hover {
   color: #0d6efd !important;
   text-decoration: underline;
+  font-size: 1.05rem;
 }
 
 .links-item:hover > .links-icon {
   color: #0d6efd !important;
+  font-size: 4.2rem;
 }
