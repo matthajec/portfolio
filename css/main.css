@@ -57,16 +57,25 @@ section.main-section {
 }
 
 
-.links-icon {
-  font-size: 4rem;
-}
 
-.links-icon,
+
+
+
 .links-item {
   color: #000;
   text-decoration: none;
   transition: color .2s ease;
   transition: font-size .2s ease;
+  height: 105px;
+}
+
+.links-item_icon {
+  font-size: 4rem;
+}
+
+.links-item_icon,
+.links-item_label {
+  line-height: 40px;
 }
 
 .links-item:hover {
@@ -75,7 +84,12 @@ section.main-section {
   font-size: 1.05rem;
 }
 
-.links-item:hover > .links-icon {
-  color: #0d6efd !important;
+.links-item:hover > .links-item_icon {
   font-size: 4.2rem;
+  line-height: 40px;
+}
+
+.links-item:hover > .links-item_label {
+  font-size: 1.05rem;
+  line-height: 40px;
 }
