@@ -76,6 +76,7 @@ section.main-section {
 .links-item_icon,
 .links-item_label {
   line-height: 40px;
+  transition: all .2s ease;
 }
 
 .links-item:hover {
