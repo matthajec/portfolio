@@ -35,6 +35,7 @@ section.main-section {
   position: relative;
   display: flex;
   justify-content: center;
+  margin-bottom: 28px;
 }
 
 .skills-tooltip {
@@ -42,7 +43,7 @@ section.main-section {
   transition: opacity .1s ease;
   position: absolute;
   transform: translateX(-15px);
-  bottom: -33px;
+  bottom: -30px;
   font-size: 12px;
   padding: 2px 5px;
   border-radius: 100px;
